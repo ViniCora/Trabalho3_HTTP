@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Redes de computadores</title>
+</head>
+<body>
+    <h1>Redes de computadores</h1>
+    <h2>Trabalho 3 - Servidor HTTP simplificado</h2>
+    <p>Fluxo do trabalho:</p>
+    <p>Procurar um código “Hello word” usando servidor TCP multi thread e seu cliente.<br>
+    Este trabalho pode ser realizado em qualquer linguagem de programação, a escolha do aluno, mas lembre-se: não pode ser usado bibliotecas que manipulem o TCP, e sim usar o TCP diretamente através da criação e manipulação dos sockets.<br>
+    No servidor TCP (deve executar antes do cliente):<br>
+    Escolher um porta para receber as conexões (maior que 1024).<br>
+    Aceitar a conexão do cliente.<br>
+    Criar uma thread com a conexão do cliente (para cada cliente). Na thread:<br>
+    Receber dados recebidos pelo cliente.<br>
+    Tratar esses dados (requisição HTTP).<br>
+    Ex.: GET /pagina.html HTTP/1.0.<br>
+    No Cliente TCP (deve executar depois do servidor):<br>
+    Usar o Browser de sua preferência.<br>
+    Colocar o endereço da máquina e porta escolhida para o servidor.<br>
+    URL: @ip do servidor:(Porta servidor)/pagina.html.<br>
+    O Browser deve apresentar o arquivo requisitado na URL.<br>
+    O Browser deve mostrar ao menos arquivos HTML + JPEG.<br>
+    O Browser deve interpretar ERROS.<br>
+    Ex.: Resposta com 404.</p>
+    <p>O trabalho deve:</p>
+    <ul>
+        <li>Usar Sockets TCP Multi-thread</li>
+        <li>Servidor:</li>
+        <li>No Servidor (Nesta Fase não é necessário implementar o cliente, pois será usado um Browser como cliente.)</li>
+        <li>Receber requisições do Cliente</li>
+        <li>Tratar corretamente as requisições HTTP e fazer o esperado.</li>
+        <li>O Browser deve funcionar apresentando o arquivo requisitado na URL</li>
+        <li>O Browser deve mostrar ao menos arquivos HTML + JPEG</li>
+        <li>O Browser deve interpretar ERROS.<br>
+            Ex.: Resposta com 404.</li>
+    </ul>
+</body>
+</html>
